@@ -170,9 +170,9 @@ function App() {
             {showFinalMessage && (
               <div className="question-modal" ref={modalRef}>
                 <div className="question-content final-message">
-                  <h3 className="question-title">¡Perfecto! 💜✨</h3>
+                  <h3 className="question-title">¡Perfecto!✨</h3>
                   <p className="secret-message">
-                    Sabía que te conocía bien... Has desbloqueado algo muy especial:
+                    Has desbloqueado algo muy especial:
                   </p>
                   <a 
                     href="https://drive.google.com/file/d/1zpfzwPZVqm5ARJr_teJA5yvamCdMeYUO/view?usp=sharing" 
