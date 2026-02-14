@@ -474,20 +474,261 @@
 }
 
 @media (max-width: 768px) {
-  .cover-title {
-    font-size: 2.5rem;
+  .bridgerton-container {
+    padding: 1rem;
   }
-  
+
   .cover-page, .letter-page {
     padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
+
+  .cover-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
   }
   
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle::before,
+  .subtitle::after {
+    display: none;
+  }
+
+  .floral-border {
+    padding: 2rem 1.5rem;
+  }
+
+  .ornament-top, .ornament-bottom {
+    width: 120px;
+    height: 70px;
+  }
+
+  .ornament-top::before,
+  .ornament-bottom::before {
+    font-size: 2.5rem;
+  }
+
+  .ornament-top::after,
+  .ornament-bottom::after {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .decorative-line {
+    width: 180px;
+  }
+
+  .decorative-line::before {
+    font-size: 1.5rem;
+  }
+
+  .season-text {
+    font-size: 0.9rem;
+  }
+
+  .open-letter-btn, .back-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  /* Carta responsive */
   .letter-content {
     padding: 2rem 1.5rem;
   }
-  
+
+  .wax-seal {
+    width: 60px;
+    height: 60px;
+  }
+
+  .wax-seal::before {
+    font-size: 2rem;
+  }
+
+  .secret-hint {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    top: -35px;
+  }
+
   .letter-text {
     font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .letter-text p {
+    margin: 1rem 0;
+    text-indent: 1.5rem;
+  }
+
+  .letter-ornament-top::after,
+  .letter-ornament-bottom::after {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  /* Modal responsive */
+  .question-modal {
+    padding: 1rem;
+  }
+
+  .question-content {
+    padding: 2rem 1.5rem;
+    max-width: 95%;
+  }
+  
+  .question-progress {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    top: 0.8rem;
+    right: 1rem;
+  }
+
+  .question-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .answer-btn {
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
+  }
+
+  .feedback {
+    font-size: 0.9rem;
+  }
+
+  /* Mensaje final responsive */
+  .secret-message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .secret-link-emoji {
+    font-size: 3rem;
+  }
+
+  .close-modal-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* Música responsive */
+  .music-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .music-intro {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .music-btn {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+  }
+  
+  .audio-player {
+    padding: 1.5rem 1rem;
+  }
+
+  .audio-element {
+    height: 48px;
+  }
+  
+  .spotify-link {
+    font-size: 0.95rem;
+    padding: 0.9rem 1.8rem;
+    gap: 0.5rem;
+  }
+
+  .spotify-icon {
+    font-size: 1.3rem;
+  }
+
+  .music-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .cover-page, .letter-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .cover-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .floral-border {
+    padding: 1.5rem 1rem;
+  }
+
+  .open-letter-btn, .back-btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .letter-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .letter-text {
+    font-size: 0.95rem;
+  }
+
+  .question-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .question-title {
+    font-size: 1.3rem;
+  }
+
+  .question-text {
+    font-size: 1rem;
+  }
+
+  .answer-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .secret-link-emoji {
+    font-size: 2.5rem;
+  }
+
+  .music-intro {
+    font-size: 0.95rem;
+  }
+
+  .music-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .spotify-link {
+    font-size: 0.85rem;
+    padding: 0.8rem 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -743,29 +984,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-  .question-content {
-    padding: 2rem 1.5rem;
-  }
-  
-  .question-title {
-    font-size: 1.5rem;
-  }
-  
-  .question-text {
-    font-size: 1.1rem;
-  }
-  
-  .answer-btn {
-    font-size: 1rem;
-    padding: 0.9rem 1.5rem;
-  }
-  
-  .secret-link {
-    font-size: 1.1rem;
-    padding: 1rem 2rem;
-  }
-}
+
 
 
 /* Sección de música */
@@ -883,25 +1102,7 @@
   75% { transform: translateY(-3px) rotate(5deg); }
 }
 
-@media (max-width: 768px) {
-  .music-intro {
-    font-size: 1rem;
-  }
-  
-  .music-btn {
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-  }
-  
-  .audio-player {
-    padding: 1.5rem;
-  }
-  
-  .spotify-link {
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-  }
-}
+
 
 
 /* Link secreto con emoji pequeño */

@@ -26,27 +26,27 @@ function App() {
       correctAnswer: 1
     },
     {
-      question: "¿Cuáles son mis flores favoritas?",
+      question: "¿Cuáles son tus flores favoritas?",
       answers: ["Rosas", "Tulipanes y Lirios", "Girasoles"],
       correctAnswer: 1
     },
     {
-      question: "¿Cuál es mi serie favorita?",
+      question: "¿Cuál es tu serie favorita?",
       answers: ["Stranger Things", "Bridgerton", "Game of Thrones"],
       correctAnswer: 1
     },
     {
-      question: "¿Cuál es mi color favorito?",
-      answers: ["Rosa", "Violeta", "Azul"],
-      correctAnswer: 1
+      question: "¿Cuál es tu color favorito?",
+      answers: ["Morado", "Rosa", "Azul"],
+      correctAnswer: 0
     },
     {
-      question: "¿Cuál es mi número preferido?",
-      answers: ["3", "7", "9"],
-      correctAnswer: 1
+      question: "¿Cuál es tu número preferido?",
+      answers: ["3", "2", "7"],
+      correctAnswer: 2
     },
     {
-      question: "¿Qué prefiero?",
+      question: "¿Qué prefieres?",
       answers: ["Perro", "Gato", "Ballena"],
       correctAnswer: 2
     }
@@ -136,7 +136,7 @@ function App() {
                     Pregunta {currentQuestionIndex + 1} de {questions.length}
                   </div>
                   <h3 className="question-title">
-                    {currentQuestionIndex === 0 ? '¿Me conoces bien?' : '¡Sigamos!'}
+                    {currentQuestionIndex === 0 ? '' : '¡Sigamos!'}
                   </h3>
                   <p className="question-text">{questions[currentQuestionIndex].question}</p>
                   <div className="answers-container">
@@ -172,7 +172,7 @@ function App() {
                 <div className="question-content final-message">
                   <h3 className="question-title">¡Perfecto! 💜✨</h3>
                   <p className="secret-message">
-                    Sabía que me conocías bien... Has desbloqueado algo muy especial:
+                    Sabía que te conocía bien... Has desbloqueado algo muy especial:
                   </p>
                   <a 
                     href="https://drive.google.com/file/d/1zpfzwPZVqm5ARJr_teJA5yvamCdMeYUO/view?usp=sharing" 
